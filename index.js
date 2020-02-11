@@ -216,7 +216,7 @@ const preloadResources = opt => {
       await page.evaluate(route => {
         const linkTag = document.createElement("link");
         linkTag.setAttribute("rel", "preconnect");
-          linkTag.setAttribute('crossorigin', '');
+        linkTag.setAttribute("crossorigin", "");
         linkTag.setAttribute("href", route);
         document.head.appendChild(linkTag);
       }, domain);
