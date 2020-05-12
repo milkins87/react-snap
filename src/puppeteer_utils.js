@@ -251,7 +251,6 @@ const crawl = async opt => {
         const tracker = createTracker(page);
         try {
           await page.goto(pageUrl, {
-            networkIdleTimeout: 5000,
             waitUntil: 'networkidle',
             timeout: 3000000
           });
